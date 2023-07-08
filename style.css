@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background: #FFF8F3;
+    font-family: sans-serif;
+}
+.primary{
+    color: #FD6E0A;
+}
+
+/* *** navigation style *** */
+nav{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 300px;
+}
+nav .logo{
+    font-size: 45px;
+    font-weight: 800;
+    color: #181818;
+}
+nav .menu ul{
+    display: flex;
+    align-items: center;
+    gap:55px;
+}
+nav .menu ul li{
+    list-style: none;
+}
+nav .menu ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #474747;
+}
+nav .menu ul li button{
+    background: #FD6E0A;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 35px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+main{
+    width: 100%;
+    height: 80vh;
+    position: inherit;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+/****** side banner ******/
+.side_banner{
+    width: 120px;
+    height: auto;
+    position: absolute;
+    left: 30px;
+    top: 65px;
+}
+
+/****** page banner ******/
+.page_banner{
+    width: auto;
+    height: auto;
+    margin-left: 140px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.page_banner.title{
+    color: #474747;
+    font-size: 45px;
+    font-weight: 600;
+}
+.page_banner.name{
+    color: #181818;
+    font-size: 85px;
+    font-weight: 700;
+}
+.page_banner.paragraph{
+    width: 585px;
+    color: #757575;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    word-spacing: 3px;
+}
+.page_banner.btn{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+}
+.page_banner.btn button{
+    width: 200px;
+    height: 64px;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.page_banner.btn button.download{
+    background: #FD6E0A;
+    color: #fff;
+}
+.page_banner.btn button.contact{
+    border: 1px solid #FD6E0A;
+}
+
+/****** image banner ******/
+.image_banner{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.image_banner img.hardy{
+    position: absolute;
+    top: -160px;
+    right: 0;
+}
