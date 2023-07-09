@@ -5,7 +5,7 @@
 body{
     width: 100%;
     height: 100%;
-    background: #FFF8F3;
+    /* background: #FFF8F3; */
     font-family: sans-serif;
 }
 .primary{
@@ -20,6 +20,7 @@ nav{
     justify-content: space-around;
     align-items: center;
     gap: 300px;
+    background: #FFF8F3;
 }
 nav .logo{
     font-size: 45px;
@@ -49,13 +50,14 @@ nav .menu ul li button{
     font-weight: 700;
 }
 
-main{
+#home{
     width: 100%;
-    height: 80vh;
+    height: 84vh;
     position: inherit;
     display: flex;
     justify-content: left;
     align-items: center;
+    background: #FFF8F3;
 }
 
 /****** side banner ******/
@@ -64,7 +66,7 @@ main{
     height: auto;
     position: absolute;
     left: 30px;
-    top: 65px;
+    top: 75px;
 }
 
 /****** page banner ******/
@@ -124,8 +126,134 @@ main{
     right: 0;
     bottom: 0;
 }
-.image_banner img.hardy{
+.image_banner img{
     position: absolute;
-    top: -160px;
+    bottom: 0;
     right: 0;
 }
+.image_banner img.hardy{
+    z-index: 11;
+}
+
+/* *** about style *** */
+#about{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about_section{
+    width: 1140px;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #FFF8F3;
+    border-radius:10px;
+    gap: 50px;
+}
+.about_section .about_heading{
+    font-size: 35px;
+    color: #181818;
+    font-weight: 700;
+}
+.about_section .about_paragraph{
+    width: 827px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    color: #757575;
+    word-spacing: 1.5px;
+    line-height: 25px;
+}
+.about_section .about_box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.about_section .about_box .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about_section .about_box .box span{
+    font-size: 20px;
+    font-weight: 400;
+    color: #757575;
+}
+.about_section .about_box .box .item{
+    font-size: 20px;
+    font-weight: bold;
+    color: #474747;
+}
+
+/* *** what_i_do style *** */
+#what_i_do{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    gap: 30px;
+}
+#what_i_do .what_i_do_heading{
+    font-size: 35px;
+    font-weight: 700;
+    color: #181818;
+}
+#what_i_do .what_i_do_paragraph{
+    width: 909px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #757575;
+    text-align: center;
+    word-spacing: 2px;
+}
+.box_card{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.box_card .card{
+    width: 267px;
+    height: 377px;
+    background: #333;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 50px;
+}
+.box_card .card .content{
+    width: 201px;
+    height: 301px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.box_card .card .content .box_card_heading h1{
+    font-size: 20px;;
+    color: #181818;
+}
+.box_card .card .content .box_card_paragraph p{
+    color: #757575;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+}
+.box_card .card .content .icon img{
+    width: 44px;
+    height: 44px;
+}
+
+/* *** summery style *** */
